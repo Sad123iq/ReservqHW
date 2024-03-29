@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+body{
+    background-color: gray;
+}
+
+header {
+    background-color: #F42C45;
+}
+.header__bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 12px 24px;
+}
+.header__bg div p{
+    color: black;
+}
+.header__bg div p a{
+    color: black;
+}
+.header__bg div span{
+    padding: 16px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.nav__bg{
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    padding: 22px 0;
+
+}
+.nav__left{
+    display: flex;
+    gap: 50px;
+}
+
+.nav__center .search {
+    width: 217px;
+    height: 53px;
+    background-color: #122833;
+    border-radius: 10px;
+    border: 1px solid rgb(186, 186, 186);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__center .search input {
+    background-color: #ffffff00;
+    border: none;
+    outline: none;
+    color: white;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 380px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    font-weight: 600;
+}
+.nav__center{
+    display: flex;
+    gap: 22px;
+}
+.nav__center .like, .nav__center .click {
+    width: 52px;
+    height: 52px;
+    position: relative;
+    background-color: #122833;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.nav__center .like .like__count, .nav__center .click .click__count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav__center .like:hover {
+    background-color: red;
+}
+.nav__center .like:hover .like__count{
+    background-color: white;
+    color: red
+}
+.nav__center .click:hover {
+    background-color: red;
+}
+.nav__center .click:hover .click__count {
+    background-color: white;
+    color: red
+}
+
+.nav__right{
+    display: flex;
+    gap: 20px;
+}
+.nav__right button{
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 32px;
+    border-radius: 10px;
+}
+
+.login__btn{
+    background-color: #F01543;
+    color: white;
+    border: none;
+    transition: .3s;
+}
+.login__btn:hover{
+    background-color: white;
+    color: #F01543;
+}
+
+.sign__btn{
+    background-color: #ffffff00;
+    color: white;
+    border: 1px solid white;
+    transition: .3s;
+}
+.sign__btn:hover{
+    background-color: #F01543;
+    color: white;
+    border: 1px solid #F01543;
+}
+
+/*MAIN*/
+
+/*main top*/
+
+.main__top{
+    background: url('https://reservq.vercel.app/assets/banner-bg-two-751df5dc.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: -97px;
+    padding-top: 183px;
+}
+h1{
+    color: white;
+    font-size: 68px
+}
+h1 span{
+    color: #F01543;
+}
+.container p{
+    color: white;
+    padding-top: 32px;
+}
+.delivery__btn{
+    background-color: #F01543;
+    color: white;
+    border: 1px solid #F01543;
+    transition: .3s;
+}
+.pickup__btn, .restaurant__btn{
+    background-color: #fff;
+    color: #F01543;
+    border: 1px solid #F01543;
+    transition: .3s;
+}
+.main__top__btns{
+    width: 612px;
+    height: 92px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 72px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main__top__btns button{
+    width: 188px;
+    height: 68px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.delivery__btn:hover{
+    background-color: white;
+    color: #F01543;
+    border: 1px solid #F01543;
+}
+
+.pickup__btn:hover{
+    background-color: #F01543;
+    color: white;
+    border: 1px solid #F01543;
+}
+
+.restaurant__btn:hover{
+    background-color: #F01543;
+    color: white;
+    border: 1px solid #F01543;
+}
+
+/*categories*/
+
+.categories{
+    background: url('https://reservq.vercel.app/assets/categories-bg-2c92439a.png');
+}
+.ctg__top{
+    display: flex;
+    justify-content: space-between;
+    padding: 81px 0 100px;
+}
+h2{
+    font-size: 48px;
+}
+.ctg__top button{
+    width: 147px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #000000;
+    border: 1px solid #000000;
+}
+.ctg__imgs{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.burger__left{
+    width: 536px;
+    height: 357px;
+    overflow: hidden;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.burger__left img {
+    width: 100%;
+    height: 100%;
+} 
+.burger__right{
+    width: 760px;
+    height: 357px;
+    overflow: hidden;
+    object-fit: fill;
+    border-radius: 10px;
+
+}
+.burger__right img {
+    width: 100%;
+    height: 100%;
+}
+.traditional h2{
+    text-align: center;
+}
+.trad__ctg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trad__ctg ul {
+    width: 648px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.trad__ctg ul li{
+    padding: 8px 10px;
+}
